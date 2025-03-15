@@ -14,24 +14,26 @@
                 <div id="headerText">
                     EZ Groceries
                 </div>
-                <a href="settings.html">
-                    <img id="headerImage" src="img/sandwichMenu.png" alt="">
-                </a>
-                </div>            
-            <div class="mainArea" id="list" >
-                List!
-            </div>
+                    <img class="headerImage" src="img/share.png" alt="share button">
+                    <img class="headerImage" src="img/sandwichMenu.png" alt="sandwich menu">
+                </div>     
+            <div id="mainArea">       
+                <div id="list" >
+                    List!
+                    <div id="listText" contenteditable="true"></div>
+                </div>
 
-            <div class="mainArea" id="recipes">
-                Recipies
+                <div id="recipes">
+                    Recipies
+                </div>
             </div>
             <div id="footer">
                 <div class="footerButton buttonPressed" id="listButton" onclick="toList()">
-                    <img src="img/cartWhite.png">
+                    <img id="listImage" src="img/cartWhite.png">
                     List
                 </div>
                 <div class="footerButton buttonUnpressed" id="recipeButton" onclick="toRecipes()">
-                    <img src="img/hatGreen.png">
+                    <img id="recipeImage" src="img/hatGreen.png">
                     Recipes
                 </div>
     

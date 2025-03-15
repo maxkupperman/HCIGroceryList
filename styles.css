@@ -35,19 +35,42 @@ hr {
     color: #000;
 }
 
-#headerImage {
+.headerImage {
     margin-left: auto;
     height: 30px;
     width: 30px;
 }
 
-.mainArea {
+#mainArea {
     flex: 1 1 auto;
+    display: flex;
+}
+
+#list {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+#listText {
+    border: transparent;
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+#listText:empty:before {
+    content: "• Add items here...";
+    opacity: 50%;
+}
+
+#listText:empty:focus:before{
+    content: "• ";
+    opacity: 100%;
 }
 
 #recipes {
     width: 0;
-    overflow-x:;
+    overflow-x: hidden;
 }
 
 #footer {
