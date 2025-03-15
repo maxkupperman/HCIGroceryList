@@ -1,0 +1,80 @@
+html, body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ height: 100%
+}
+
+hr {
+    color: #6aa84fff;
+    background-color: #6aa84fff;
+    border: transparent;
+    height: 5px;
+}
+
+#container {
+    max-width: 500px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    display: flex;
+    flex-flow: column;
+}
+
+#header {
+    margin-bottom: auto;
+    display: flex;
+    flex: 0 1 auto;
+    height: 30px;
+}
+
+#headerText {
+    text-align: left;
+    margin-right: auto;
+    font-size: 30px;
+    color: #000;
+}
+
+#headerImage {
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+}
+
+.mainArea {
+    height: auto;
+    flex: 1 1 auto;
+}
+
+#footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    flex: 0 0 70px;
+}
+
+#footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.footerButton {
+    width: 50%;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.buttonPressed {
+    background-color: #6aa84fff;
+    color: #ffffff;
+}
+
+.buttonUnpressed {
+    background-color: #ffffff;
+    color: #6aa84fff;
+}
