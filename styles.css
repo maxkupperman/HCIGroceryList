@@ -64,8 +64,12 @@ hr {
 }
 
 #listText:empty:focus:before{
-    content: "• ";
+    content: "";
     opacity: 100%;
+}
+
+#listText > div {
+    display: list-item;
 }
 
 #recipes {
