@@ -54,8 +54,9 @@ hr {
 
 #listText {
     border: transparent;
-    flex: 1 1 auto;
+    flex: 1 1 50%;
     padding: 20px;
+    height: 50%
 }
 
 #firstItem:empty:before {
@@ -71,6 +72,15 @@ hr {
 
 #listText > div {
     display: list-item;
+}
+
+#listSuggestions {
+    flex: 1 1 25%;
+}
+
+#listSuggestions > a {
+    display: list-item;
+    margin-left: 10%;
 }
 
 #recipes {
