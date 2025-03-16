@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
+    <title>EZ Groceries</title>
     <link rel="stylesheet" href="styles.css"
 </head>
 <body>
@@ -27,13 +27,19 @@
                     </div>
                     <div id="listSuggestions">
                         Suggestions from Past lists 
-                        <a href="#" onclick="addSuggestion()">Bread</a>
-                        <a href="#" onclick="addSuggestion()">Milk</a>
-                        <a href="#" onclick="addSuggestion()">Eggs</a>
+                        <a href="#suggestion1" id="suggestion1" onclick="addSuggestion('suggestion1')">Bread</a>
+                        <a href="#suggestion2" id="suggestion2" onclick="addSuggestion('suggestion2')">Milk</a>
+                        <a href="#suggestion3" id="suggestion3" onclick="addSuggestion('suggestion3')">Eggs</a>
                     </div>
                     <div id="listReminders">
                         Remember to check your:
-                        
+                        <br>
+                        <input type="checkbox" id="fridge">
+                        <label for="fridge">Refrigerator</label>
+                        <input type="checkbox" id="freezer">
+                        <label for="freezer">Freezer</label>
+                        <input type="checkbox" id="pantry">
+                        <label for="pantry">Pantry</label>                       
                     </div>
                 </div>
 

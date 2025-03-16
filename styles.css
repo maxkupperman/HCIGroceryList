@@ -81,10 +81,12 @@ hr {
     margin-left: 10%;
 }
 
+#listReminders {
+    padding-bottom: 10px;
+}
+
 #recipes {
-    width: 0%;
-    visibility: hidden;
-    display: flex;
+    display: none;
     flex-flow: column;
 }
 
