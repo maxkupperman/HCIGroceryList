@@ -9,6 +9,7 @@
 <body>
     <script src="scripts/tabSelection.js"></script>
     <script src="scripts/listFormatting.js"></script>
+    <script src="scripts/recipes.js"></script>
     <script src="scripts/alerts.js"></script>
     <div id="container">
         <div id="header">
@@ -52,12 +53,17 @@
                         <img class="recipePhoto" src="img/recipePhotos/grilledSalmon.jpg">
                         <div class="recipeText">
                             <div class="recipeTitle">Salmon with Lemon and Dill</div> 
-                            <div class="recipeDescription">An easy weeknight protein for warm weather.</div>
-                            <a href="#recipe1" onclick="instructionAlert()">Instructions [+]</a>
+                            <div class="recipeDescription">An easy, summery weeknight protein. Pairs well with brussels sprouts.</div>
+                            <a href="#recipe1Instructions" onclick="instructionAlert()">Instructions [+]</a>
                             <br>
-                            <a>Ingredients [+]</a>
+                            <a href="#recipe1Ingredient" id="recipe1Ingredient" onclick="hideOrShowIngredients('recipe1IngredientList')">Ingredients [+]</a>
+                            <div class="hideIngredients" id="recipe1IngredientList">
+                                <li>Salmon</li>
+                                <li>Lemon</li>
+                                <li>Dill</li>
+                            </div>
                         </div>
-                        <img class="recipeCheckbox recipePhoto unselected" id="salmonCheck" src="img/boxUnchecked.png">
+                        <img class="recipeCheckbox unselected" id="salmonCheck" src="img/boxUnchecked.png">
                     </div>
                     <div class="recipe" id="brusselsSprouts">
                         <img class="recipePhoto" src="img/recipePhotos/roastedBrusselsSprouts.jpg">
@@ -65,8 +71,14 @@
                             <div class="recipeTitle">Roasted Brussels Sprouts</div> 
                             <div class="recipeDescription">Crispy brussels sprouts with olive oil in the oven.</div>
                             <a href="#recipe2" onclick="instructionAlert()">Instructions [+]</a>
+                            <br>
+                            <a href="#recipe2Ingredient" id="recipe2Ingredient" onclick="hideOrShowIngredients('recipe2IngredientList')">Ingredients [+]</a>
+                            <div class="hideIngredients" id="recipe2IngredientList">
+                                <li>Brussels Sprouts</li>
+                                <li>Olive Oil</li>
+                            </div>
                         </div>
-                        <img class="recipeCheckbox recipePhoto unselected" id="brussCheck" src="img/boxUnchecked.png">
+                        <img class="recipeCheckbox unselected" id="brussCheck" src="img/boxUnchecked.png">
                     </div>
                     <a href="#addRecipe" id="addRecipe" onclick="addRecipeAlert()">
                         + Add Recipe

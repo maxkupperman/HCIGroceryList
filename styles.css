@@ -112,6 +112,12 @@ hr {
     width: 100px;
 }
 
+.recipeCheckbox {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
 .recipeText {
     margin-left: 10px;
     margin-right: 10px;
@@ -120,6 +126,15 @@ hr {
 .recipeDescription {
     font-weight: normal;
     font-style: italic;
+}
+
+.hideIngredients {
+    display: none;
+}
+
+.showIngredients {
+    display: flex;
+    flex-flow: column;
 }
 
 #addRecipe {
