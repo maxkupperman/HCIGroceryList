@@ -25,14 +25,14 @@ hr {
     display: flex;
     flex: 0 1 30px;
     padding-top: 10px;
-
 }
 
 #headerText {
     text-align: left;
     margin-right: auto;
     font-size: 30px;
-    color: #000;
+    color: #6aa84fff;
+    ;
 }
 
 .headerImage {
@@ -58,15 +58,16 @@ hr {
     padding: 20px;
 }
 
-#listText:empty:before {
-    content: "• Add items here...";
+#firstItem:empty:before {
+    content: "Add items here...";
     opacity: 50%;
 }
 
-#listText:empty:focus:before{
+#firstItem:empty:focus:before{
     content: "";
     opacity: 100%;
 }
+
 
 #listText > div {
     display: list-item;

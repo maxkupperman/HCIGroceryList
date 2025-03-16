@@ -1,5 +1,4 @@
 function listFormatting() {
-    list = document.getElementById('listText')
+    firstItem = document.getElementById('firstItem')
     console.log('its running')
-    console.log(list.innerHTML)
 };
