@@ -57,12 +57,12 @@ hr {
     padding: 20px;
 }
 
-#firstItem:empty:before {
+.listItem:empty:before {
     content: "Add items here...";
     opacity: 50%;
 }
 
-#firstItem:empty:focus:before{
+.listItem:empty:focus:before{
     content: "";
     opacity: 100%;
 }
