@@ -32,7 +32,6 @@ hr {
     margin-right: auto;
     font-size: 30px;
     color: #6aa84fff;
-    ;
 }
 
 .headerImage {
@@ -54,9 +53,8 @@ hr {
 
 #listText {
     border: transparent;
-    flex: 1 1 50%;
+    flex: 1 1 auto;
     padding: 20px;
-    height: 50%
 }
 
 #firstItem:empty:before {
@@ -75,7 +73,7 @@ hr {
 }
 
 #listSuggestions {
-    flex: 1 1 25%;
+    flex: 1 1 auto;
 }
 
 #listSuggestions > a {
@@ -84,8 +82,10 @@ hr {
 }
 
 #recipes {
-    width: 0;
-    overflow-x: hidden;
+    width: 0%;
+    visibility: hidden;
+    display: flex;
+    flex-flow: column;
 }
 
 #footer {

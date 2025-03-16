@@ -1,11 +1,9 @@
 function hideMainArea(document){
-    document.style['width'] = '0%';
-    document.style['overflow-x'] = 'hidden';
+    document.style['display'] = 'none';
 }
 
 function showMainArea(document){
-    document.style['width'] = '100%';
-    document.style['overflow-x'] = 'visible';
+    document.style['display'] = 'flex';
 }
 
 function highlightButton(document){
