@@ -49,6 +49,7 @@ hr {
     width: 100%;
     display: flex;
     flex-flow: column;
+    overflow: scroll;
 }
 
 #listText {
@@ -73,7 +74,9 @@ hr {
 }
 
 #listSuggestions {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #listSuggestions > a {
@@ -88,6 +91,7 @@ hr {
 #shop {
     display: none;
     flex-flow: column;
+    width: 100%;
 }
 
 #recipes {
@@ -145,6 +149,70 @@ hr {
 #addRecipe {
     font-size: 20px;
     color: #6aa84fff;
+}
+
+#shopList {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto
+}
+
+#shopBottom {
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 auto;
+    max-height: fit-content;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+#progressDial {
+    width: 150px;
+    height: 150px;
+    transform:rotate(-90deg);
+}
+
+#greyCircle {
+    fill: transparent;
+    stroke: #c0c0c0; 
+    stroke-width: 10px;
+}
+
+#greenCircle {
+    stroke: #6aa84fff; 
+    stroke-width: 10px; 
+    stroke-linecap: round; 
+    stroke-dashoffset: 409px; 
+    fill: transparent;
+    stroke-dasharray: 409px;
+}
+
+#dialText {
+    transform:rotate(90deg) translate(-60px, -165px);
+    font-size: 30px;
+    color: #6aa84fff;
+    text-align: center;
+    align-items: center;
+}
+
+#finishButton {
+    background-color: #6aa84fff;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    flex: 1 1 auto;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    max-height: fit-content;
 }
 
 #footer {
