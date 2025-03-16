@@ -128,6 +128,11 @@ hr {
     font-style: italic;
 }
 
+.ingredientList > div {
+    display: list-item;
+    margin-left: 10px;
+}
+
 .hideIngredients {
     display: none;
 }

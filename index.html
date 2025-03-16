@@ -57,13 +57,13 @@
                             <a href="#recipe1Instructions" onclick="instructionAlert()">Instructions [+]</a>
                             <br>
                             <a href="#recipe1Ingredient" id="recipe1Ingredient" onclick="hideOrShowIngredients('recipe1IngredientList')">Ingredients [+]</a>
-                            <div class="hideIngredients" id="recipe1IngredientList">
-                                <li>Salmon</li>
-                                <li>Lemon</li>
-                                <li>Dill</li>
+                            <div class="ingredientList hideIngredients" id="recipe1IngredientList">
+                                <div class="recipe1IngredientList">Salmon</div>
+                                <div class="recipe1IngredientList">Lemon</div>
+                                <div class="recipe1IngredientList">Dill</div>
                             </div>
                         </div>
-                        <img class="recipeCheckbox unselected" id="salmonCheck" src="img/boxUnchecked.png">
+                        <img class="recipeCheckbox unselected" id="salmonCheck" src="img/boxUnchecked.png" onclick="selectOrUnselectRecipe('salmonCheck','recipe1IngredientList')">
                     </div>
                     <div class="recipe" id="brusselsSprouts">
                         <img class="recipePhoto" src="img/recipePhotos/roastedBrusselsSprouts.jpg">
@@ -73,12 +73,12 @@
                             <a href="#recipe2" onclick="instructionAlert()">Instructions [+]</a>
                             <br>
                             <a href="#recipe2Ingredient" id="recipe2Ingredient" onclick="hideOrShowIngredients('recipe2IngredientList')">Ingredients [+]</a>
-                            <div class="hideIngredients" id="recipe2IngredientList">
-                                <li>Brussels Sprouts</li>
-                                <li>Olive Oil</li>
+                            <div class="ingredientList hideIngredients" id="recipe2IngredientList">
+                                <div class="recipe2IngredientList">Brussels Sprouts</div>
+                                <div class="recipe2IngredientList">Olive Oil</div>
                             </div>
                         </div>
-                        <img class="recipeCheckbox unselected" id="brussCheck" src="img/boxUnchecked.png">
+                        <img class="recipeCheckbox unselected" id="brussCheck" src="img/boxUnchecked.png" onclick="selectOrUnselectRecipe('brussCheck','recipe2IngredientList')">
                     </div>
                     <a href="#addRecipe" id="addRecipe" onclick="addRecipeAlert()">
                         + Add Recipe
