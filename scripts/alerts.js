@@ -5,3 +5,11 @@ function shareAlert(){
 function menuAlert() {
     alert("In a more fully built out app, this menu would allow you to:\n * View past lists\n * Access settings\nBut right now, it doesn't do anything.")
 }
+
+function instructionAlert(){
+    alert("In a more fully built out app, you could click these links to see recipe instructions.\nBut right now, they don't do anything.")
+}
+
+function addRecipeAlert(){
+    alert("In a more fully built out app, you would be able to click this button and add both your own recipes and recipes from other people.\nBut right now, this button does nothing.")
+}

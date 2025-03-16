@@ -42,18 +42,45 @@
                         <label for="pantry">Pantry</label>                       
                     </div>
                 </div>
+                <div id="shop">
+
+                </div>
 
                 <div id="recipes">
                     Your Recipies
-                    <div id="recipeContainer">
-
+                    <div class="recipe" id="salmon">
+                        <img class="recipePhoto" src="img/recipePhotos/grilledSalmon.jpg">
+                        <div class="recipeText">
+                            <div class="recipeTitle">Salmon with Lemon and Dill</div> 
+                            <div class="recipeDescription">An easy weeknight protein for warm weather.</div>
+                            <a href="#recipe1" onclick="instructionAlert()">Instructions [+]</a>
+                            <br>
+                            <a>Ingredients [+]</a>
+                        </div>
+                        <img class="recipeCheckbox recipePhoto unselected" id="salmonCheck" src="img/boxUnchecked.png">
                     </div>
+                    <div class="recipe" id="brusselsSprouts">
+                        <img class="recipePhoto" src="img/recipePhotos/roastedBrusselsSprouts.jpg">
+                        <div class="recipeText">
+                            <div class="recipeTitle">Roasted Brussels Sprouts</div> 
+                            <div class="recipeDescription">Crispy brussels sprouts with olive oil in the oven.</div>
+                            <a href="#recipe2" onclick="instructionAlert()">Instructions [+]</a>
+                        </div>
+                        <img class="recipeCheckbox recipePhoto unselected" id="brussCheck" src="img/boxUnchecked.png">
+                    </div>
+                    <a href="#addRecipe" id="addRecipe" onclick="addRecipeAlert()">
+                        + Add Recipe
+                    </a>
                 </div>
             </div>
             <div id="footer">
                 <div class="footerButton buttonPressed" id="listButton" onclick="toList()">
-                    <img id="listImage" src="img/cartWhite.png">
-                    List
+                    <img id="listImage" src="img/pencilWhite.png">
+                    Edit List
+                </div>
+                <div class="footerButton buttonUnpressed" id="shopButton" onclick="toShop()">
+                    <img id="shopImage" src="img/cartGreen.png">
+                    Start Shopping!
                 </div>
                 <div class="footerButton buttonUnpressed" id="recipeButton" onclick="toRecipes()">
                     <img id="recipeImage" src="img/hatGreen.png">

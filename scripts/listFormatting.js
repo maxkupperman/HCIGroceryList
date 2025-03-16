@@ -23,7 +23,4 @@ function addSuggestion(selector) {
     }
     
     suggestionPosition += 1;
-
-    suggestion.remove()
-
 }

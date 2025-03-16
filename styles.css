@@ -85,9 +85,46 @@ hr {
     padding-bottom: 10px;
 }
 
+#shop {
+    display: none;
+    flex-flow: column;
+}
+
 #recipes {
     display: none;
     flex-flow: column;
+    width: 100%
+}
+
+.recipe {
+    border: 5px solid #6aa84fff;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1 1 auto;
+    max-height: fit-content;
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+}
+
+.recipePhoto {
+    height: 100px;
+    width: 100px;
+}
+
+.recipeText {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.recipeDescription {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#addRecipe {
+    font-size: 20px;
+    color: #6aa84fff;
 }
 
 #footer {
