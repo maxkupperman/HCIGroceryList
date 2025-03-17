@@ -66,7 +66,7 @@
                                 <text id="dialText" x="100" y="100" font-size="20">23/20</text>
                             </svg>
                         </div>
-                        <div id="finishButton">
+                        <div id="finishButton" onclick="finishShopping()">
                             Finish<br>Shopping
                         </div>
                     </div>
@@ -83,9 +83,9 @@
                             <br>
                             <a href="#recipe1Ingredient" id="recipe1Ingredient" onclick="hideOrShowIngredients('recipe1IngredientList')">Ingredients [+]</a>
                             <div class="ingredientList hideIngredients" id="recipe1IngredientList">
-                                <div class="recipe1IngredientList">Salmon</div>
-                                <div class="recipe1IngredientList">Lemons</div>
-                                <div class="recipe1IngredientList">Dill</div>
+                                <div class="listItem recipe1IngredientList">Salmon</div>
+                                <div class="listItem recipe1IngredientList">Lemons</div>
+                                <div class="listItem recipe1IngredientList">Dill</div>
                             </div>
                         </div>
                         <img class="recipeCheckbox unselected" id="salmonCheck" src="img/boxUnchecked.png" onclick="selectOrUnselectRecipe('salmonCheck','recipe1IngredientList')">
@@ -99,8 +99,8 @@
                             <br>
                             <a href="#recipe2Ingredient" id="recipe2Ingredient" onclick="hideOrShowIngredients('recipe2IngredientList')">Ingredients [+]</a>
                             <div class="ingredientList hideIngredients" id="recipe2IngredientList">
-                                <div class="recipe2IngredientList">Brussels Sprouts</div>
-                                <div class="recipe2IngredientList">Olive Oil</div>
+                                <div class="listItem recipe2IngredientList">Brussels Sprouts</div>
+                                <div class="listItem recipe2IngredientList">Olive Oil</div>
                             </div>
                         </div>
                         <img class="recipeCheckbox unselected" id="brussCheck" src="img/boxUnchecked.png" onclick="selectOrUnselectRecipe('brussCheck','recipe2IngredientList')">

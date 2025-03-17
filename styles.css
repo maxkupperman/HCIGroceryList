@@ -223,7 +223,7 @@ hr {
 }
 
 #dialText {
-    transform:rotate(90deg) translate(-60px, -165px);
+    transform:rotate(90deg) translate(-45px, -165px);
     font-size: 30px;
     color: #6aa84fff;
     text-align: center;

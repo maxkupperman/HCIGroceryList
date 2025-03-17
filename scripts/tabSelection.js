@@ -79,6 +79,22 @@ function getImage(item){
     return '<div class="noImage" onclick="imageAlert()">+ Add Image</div>'
 }
 
+function getCheck(item, i){
+    if (item.classList.contains('checked')){
+        returnText = '<img class="itemCheckbox selected" src="img/boxChecked.png" id="itemCheckbox'
+        + i + '" onclick="selectOrUnselectItem(\'shopItem' + i + '\',\'itemCheckbox'
+        + i + '\',' + i + ')" />'
+
+        return returnText
+    } else {
+        returnText = '<img class="itemCheckbox unselected" src="img/boxUnchecked.png" id="itemCheckbox'
+        + i + '" onclick="selectOrUnselectItem(\'shopItem' + i + '\',\'itemCheckbox'
+        + i + '\',' + i + ')" />'
+
+        return returnText
+    }
+}
+
 
 function toShop(){
 
@@ -114,10 +130,18 @@ function toShop(){
 
         shopList.innerHTML +=
             '<div class="shopItem" id="shopItem' + i
-            + '">\n<img class="itemCheckbox unselected" src="img/boxUnchecked.png" id="itemCheckbox'
-            + i + '" onclick="selectOrUnselectItem(\'shopItem' + i + '\',\'itemCheckbox'
-            + i + '\',' + i + ')" />'
+            + '">\n' + getCheck(listItems[i], i)
             + '\n<div class="itemName">' + item + '</div>'
             + getImage(item) + '</div>';
       }
+
+      var listLength = document.getElementById('shopList').children.length
+      var numSelected = document.getElementsByClassName('itemCheckbox selected').length
+      var dialText = document.getElementById('dialText')
+      var greenCircle = document.getElementById('greenCircle')
+      var newOffset = 409 - Math.ceil(409 * (numSelected/listLength))
+  
+      dialText.innerHTML = numSelected + "/" + listLength
+      greenCircle.style['stroke-dashoffset'] = newOffset
+  
 };
