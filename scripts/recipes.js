@@ -25,6 +25,10 @@ function selectOrUnselectRecipe(selfSelector, ingredientsSelector) {
         checkbox.classList.add('selected')
         checkbox.src = 'img/boxChecked.png'
 
+        if(mainList.innerHTML.trim() == '<div class="listItem"></div>'){
+            mainList.innerHTML = '';
+        }
+
         mainList.innerHTML += ingredientList.innerHTML
     } 
     else if (checkbox.classList.contains('selected')){

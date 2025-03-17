@@ -58,12 +58,12 @@ hr {
     padding: 20px;
 }
 
-.listItem:empty:before {
+#listText > div:empty:before {
     content: "Add items here...";
     opacity: 50%;
 }
 
-.listItem:empty:focus:before{
+#listItem > div:empty:focus:before{
     content: "";
     opacity: 100%;
 }

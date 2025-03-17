@@ -113,8 +113,11 @@ function toShop(){
         item = listItems[i].innerHTML;
 
         shopList.innerHTML +=
-            '<div class="shopItem">\n<img class="itemCheckbox" src="img/boxUnchecked.png">'
-            + '<div class="itemName">' + item + '</div>'
+            '<div class="shopItem" id="shopItem' + i
+            + '">\n<img class="itemCheckbox unselected" src="img/boxUnchecked.png" id="itemCheckbox'
+            + i + '" onclick="selectOrUnselectItem(\'shopItem' + i + '\',\'itemCheckbox'
+            + i + '\',' + i + ')" />'
+            + '\n<div class="itemName">' + item + '</div>'
             + getImage(item) + '</div>';
       }
 };

@@ -12,6 +12,10 @@ function addSuggestion(selector) {
     var listSuggestions = document.getElementById('listSuggestions');
     var position = (suggestionPosition - 3);
 
+    if(listText.innerHTML.trim() == '<div class="listItem"></div>'){
+        listText.innerHTML = '';
+    }
+
     listText.innerHTML += "\n<div class='listItem'>" + content + "</div>";
 
     if(position < suggestionList.length){
