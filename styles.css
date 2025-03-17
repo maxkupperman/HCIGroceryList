@@ -41,7 +41,7 @@ hr {
 }
 
 #mainArea {
-    flex: 1 1 auto;
+    flex: 1;
     display: flex;
 }
 
@@ -49,7 +49,7 @@ hr {
     width: 100%;
     display: flex;
     flex-flow: column;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #listText {
@@ -154,7 +154,34 @@ hr {
 #shopList {
     display: flex;
     flex-flow: column;
-    flex: 1 1 auto
+    flex: 1 1 auto;
+    overflow-y: auto;
+    height: 0px;
+}
+
+.shopItem {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    overflow: auto;
+    min-height: min-content;
+}
+
+.shopItem > img {
+    height: 40px;
+    width: 40px;
+    margin: 15px
+}
+
+.itemName {
+    font-size: 20px;
+}
+
+.noImage {
+    margin-left: 15px;
+    font-style: italic;
+    opacity: 50%;
 }
 
 #shopBottom {

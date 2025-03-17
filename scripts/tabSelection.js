@@ -1,3 +1,4 @@
+
 function hideMainArea(document){
     document.style['display'] = 'none';
 }
@@ -64,8 +65,23 @@ function toList(){
     document.getElementById("shopImage").src = 'img/cartGreen.png';
 };
 
+function getImage(item){
+    const defaultGroceries = ['Bread','Milk','Eggs','Bananas','Apples','Cucumber','Onion','Garlic','Salmon','Lemons','Dill','Brussels Sprouts','Olive Oil']
+    const defaultImages = ['bread','milk','eggs','bananas','apples','cucumber','onion','garlic','salmon','lemons','dill','brusselssprouts','oliveoil']
+
+    for (let i = 0; i < defaultGroceries.length; i++){
+        if (item == defaultGroceries[i]){
+            returnText = '<img class="itemImage" src="img/foodPhotos/' + defaultImages[i] + '.jpg" />'
+            return returnText
+        }
+    }
+
+    return '<div class="noImage" onclick="imageAlert()">+ Add Image</div>'
+}
+
 
 function toShop(){
+
     const recipes = document.getElementById("recipes");
     hideMainArea(recipes)
 
@@ -87,4 +103,18 @@ function toShop(){
     document.getElementById("listImage").src = 'img/pencilGreen.png';
     document.getElementById("recipeImage").src = 'img/hatGreen.png';
     document.getElementById("shopImage").src = 'img/cartWhite.png';
+
+    const shopList = document.getElementById('shopList')
+    const listItems = document.getElementById('listText').children
+
+    shopList.innerHTML = "";
+
+    for (let i = 0; i < listItems.length; i++) {
+        item = listItems[i].innerHTML;
+
+        shopList.innerHTML +=
+            '<div class="shopItem">\n<img class="itemCheckbox" src="img/boxUnchecked.png">'
+            + '<div class="itemName">' + item + '</div>'
+            + getImage(item) + '</div>';
+      }
 };

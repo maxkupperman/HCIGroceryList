@@ -13,3 +13,7 @@ function instructionAlert(){
 function addRecipeAlert(){
     alert("In a more fully built out app, you would be able to click this button and add both your own recipes and recipes from other people.\nBut right now, this button does nothing.")
 }
+
+function imageAlert(){
+    alert("In a more fully built out app, you would be able to add images yourself instead of just relying on my defaults.\nBut right now, the default images are all there are.")
+}
